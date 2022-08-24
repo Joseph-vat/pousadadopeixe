@@ -1,0 +1,243 @@
+a {
+    text-decoration: none;
+    color: #dac7ae;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 65px;
+    padding: 10px 0px;
+    justify-content: space-between;   
+    align-items: center;
+    background-color:#1f0c08;
+    z-index: 100;
+}
+
+#logocabeçalho {
+    width: 170px;
+    padding: 0 60px;
+}
+
+#menu li {
+    margin: 1px;
+}
+
+#menu{
+    display: flex;
+    gap: 10px;
+    padding: 0 60px;
+}
+
+
+#container > header > nav {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+
+
+
+footer{
+    background-color: #1f0c08;
+    height: 190px;
+}
+
+#container > footer > #conteudorodape {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+}
+
+
+#container > footer > #conteudorodape > #rodapeul {
+    align-items: center;
+}
+
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#container > footer > #contato2{
+    grid-column: span 3;
+    background-color: rgb(183, 0, 255);
+}
+
+#contato2{
+    justify-content: center;
+}
+
+#container > footer > #rodape2 {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #592519;
+    color: #dac7ae;
+}
+
+#privacidade{
+    height: 50px;
+}
+
+#logo_rodape {
+    width: 400px;
+}
+
+#container > footer > #contato {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#contato > a {
+    width: 100%;
+}
+
+#botão{
+    width: 100%;
+    border-radius: 20px;
+    padding: 8px;
+    background-color: #d08000;
+}
+
+#contato{
+    min-width: 100px;
+}
+
+#instagram, #facebook, #whatsapp{
+    width: 40px;
+    margin-bottom: 15px;
+}
+
+#icones{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+
+main{
+    padding: 50px 0px;
+}
+
+h1{
+    font-size: 24px;
+}
+
+main > p{
+    font-size: 19px;
+}
+
+#foto{
+    width: 673px;
+}
+
+#corpo{
+    display: flex;
+    font-size: 21px;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+#colunas{
+    display: flex;
+    padding: 99px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mapa{
+    display: flex;
+    padding-top: 60px;
+    justify-content: center;
+}
+
+
+
+
+
+/* ========== slider =========== */
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-1007px * 8));
+    }
+}
+
+.slider {
+    background: pr;
+    height: 500px;
+    margin: auto;
+    padding-top: 40px;
+    position: relative;
+    width: 1349px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    
+}   
+
+.slider::before,
+.slider::after {
+    
+    content: "";
+    height: 500px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide-track {
+    gap: 10px;
+    animation: scroll 170s linear infinite;
+    animation-direction: alternate;
+    display: flex;
+    width: calc(1007px * 14);
+}
+
+.slider .slide {
+    height: 500px;
+}
+
+.slide>img {
+    height: 500px;
+}
+
+
+
+
+
+
+

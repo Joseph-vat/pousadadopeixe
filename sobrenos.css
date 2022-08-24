@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12pt;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #dac7ae;
+}
+
+#container{
+    display: grid;
+    margin-top: 75px;
+    min-height: 100vh;
+    grid-template-rows: 400px 1fr 180px 30px;
+}
+
+#container > #imagemservico {
+    display: grid;
+    margin-top: none;
+    background: no-repeat center/cover url(imagens/CAPA\ DOS\ QUEM\ SOMOS.png);
+    align-items: center;
+    justify-content: center;
+}
+
+#container > #imagemservico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #dac7ae;
+}
+
+#container > #imagemservico > div > #service {
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat bold', sans-serif;
+    
+}
+
+#container > #imagemservico > div > #legenda {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat Light', sans-serif;
+    
+}
+
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-1007px * 8));
+    }
+}
+
+.slider {
+    background: pr;
+    height: 500px;
+    margin: auto;
+    padding-top: 40px;
+    position: relative;
+    width: 1349px;
+    overflow: hidden;
+}
+
+.slider::before,
+.slider::after {
+
+    content: "";
+    height: 500px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide-track {
+    animation: scroll 120s linear infinite;
+    animation-direction: alternate;
+    display: flex;
+    width: calc(1007px * 14);
+}
+
+.slider .slide {
+    height: 500px;
+}
+
+.slide>img {
+    height: 500px;
+}
+
+
+#text{
+   justify-content: center;
+   font-size: 30px;
+   text-align: center;
+   padding-top: 20px;
+   font-family: 'Montserrat-Thin', sans-serif;
+   padding-bottom: 0;
+}

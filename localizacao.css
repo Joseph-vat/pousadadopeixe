@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12pt;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #dac7ae;
+}
+
+#container{
+    display: grid;
+    margin-top: 75px;
+    min-height: 100vh;
+    grid-template-rows: 400px 1fr 180px 30px;
+}
+
+#container > #imagemservico {
+    display: grid;
+    margin-top: none;
+    background: no-repeat center/cover url(imagens/CAPA\ LOCALIZACAO.png);
+    align-items: center;
+    justify-content: center;
+}
+
+#container > #imagemservico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #dac7ae;
+}
+
+#container > #imagemservico > div > #service {
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat bold', sans-serif;
+    
+}
+
+#container > #imagemservico > div > #legenda {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat Light', sans-serif;
+    
+}
+
